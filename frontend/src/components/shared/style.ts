@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export interface Props {
   open?: boolean;
 }
+export const HeaderStyle = styled.header`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+`;
 
 export const Nav = styled.nav`
   display: flex;
@@ -79,8 +85,6 @@ export const NavbarBox = styled.div<Props>`
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-end;
     display: ${({ open }) => (open === false ? 'none' : 'flex')};
   }
 `;
