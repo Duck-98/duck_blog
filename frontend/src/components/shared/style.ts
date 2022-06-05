@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export interface Props {
+  open?: boolean;
+}
+
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -7,13 +11,14 @@ export const Nav = styled.nav`
   background-color: #333333;
   padding: 8px 12px;
   @media screen and (max-width: 768px) {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: centers;
     padding: 8px 24px;
   }
   .navbar_logo {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     align-items: center;
   }
@@ -67,5 +72,15 @@ export const A = styled.a`
   &:hover {
     font-weight: bold;
     color: white;
+  }
+`;
+
+export const NavbarBox = styled.div<Props>`
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-end;
+    display: ${({ open }) => (open === false ? 'none' : 'flex')};
   }
 `;
