@@ -24,9 +24,6 @@ const GlobalStyle = () => (
         outline: none;
         color: #fff;
       }
-      button {
-        border: 1px solid #000;
-      }
     `}
   />
 );

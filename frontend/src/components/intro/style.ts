@@ -3,9 +3,47 @@ import styled from 'styled-components';
 export const SubContainer = styled.div`
   display: flex;
   padding-top: 10rem;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    ul {
+      padding-top: 2rem;
+      li {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 3rem;
+    }
+  }
   .title {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+  .subTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  .profile {
+    img {
+      border: 2px solid black;
+      width: 300px;
+      height: 400px;
+    }
   }
 `;
 
@@ -15,6 +53,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
   .intro {
     h1 {
       color: #333;

@@ -9,11 +9,10 @@ const responsiveView = {
 };
 
 export const lightTheme = {
-  HDPC: `(min-width: ${responsiveView.HDPC})`,
-  PC: `(min-width: ${responsiveView.PC})`,
-  NOTEBOOK: `(min-width: ${responsiveView.NOTEBOOK})`,
-  TABLET: `(min-width: ${responsiveView.TABLET})`,
-  MOBILE: `(min-width: ${responsiveView.MOBILE})`,
+  MOBILE: `(max-width: ${responsiveView.MOBILE})`,
+  TABLET: `(max-width: ${responsiveView.TABLET})`,
+  PC: `(max-width: ${responsiveView.PC})`,
+  HDPC: `(max-width: ${responsiveView.HDPC})`,
 };
 
 export type ThemeType = typeof lightTheme;
