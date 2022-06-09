@@ -13,6 +13,8 @@ export const lightTheme = {
   TABLET: `(max-width: ${responsiveView.TABLET})`,
   PC: `(max-width: ${responsiveView.PC})`,
   HDPC: `(max-width: ${responsiveView.HDPC})`,
+  BACKGROUND_COLOR: '#333333',
+  LINE_WHITE_COLOR: '#fff',
 };
 
 export type ThemeType = typeof lightTheme;

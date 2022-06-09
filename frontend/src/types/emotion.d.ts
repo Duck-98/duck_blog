@@ -8,5 +8,7 @@ declare module '@emotion/react' {
     TABLET: string;
     MOBILE: string;
     Open: boolean;
+    BACKGROUND_COLOR: string;
+    LINE_WHITE_COLOR: string;
   }
 }

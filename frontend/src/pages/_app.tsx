@@ -2,12 +2,14 @@ import { AppProps } from 'next/app';
 import React from 'react';
 import GlobalStyle from 'src/theme/globalStyle';
 import { lightTheme } from 'src/theme';
-import { ThemeProvider } from '@emotion/react';
-import Layout from 'src/components/shared/Layout';
+import { ThemeProvider } from 'styled-components';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Header from 'src/components/shared/Header';
+import Footer from 'src/components/shared/Footer';
+import Layout from 'src/components/shared/Layout';
 
-const MyApp = ({ Component }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   return (
     <>
@@ -16,10 +18,10 @@ const MyApp = ({ Component }: AppProps) => {
         <meta name="description" content="나덕경 블로그" />
         <title>duck_blog</title>
       </Head>
+      <GlobalStyle />
       <ThemeProvider theme={lightTheme}>
-        <GlobalStyle />
         <Layout>
-          <Component />
+          <Component {...pageProps} />
         </Layout>
       </ThemeProvider>
     </>

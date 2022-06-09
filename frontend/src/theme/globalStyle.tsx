@@ -1,6 +1,11 @@
 import { Global, css } from '@emotion/react';
 import reset from 'emotion-reset';
 import React from 'react';
+import { lightTheme, ThemeType } from '.';
+
+interface GlobalStyleProps {
+  theme: ThemeType;
+}
 
 const GlobalStyle = () => (
   <Global
@@ -9,6 +14,7 @@ const GlobalStyle = () => (
         margin: 0;
         padding: 0;
         height: 100%;
+        width: 100%;
       }
       * {
         box-sizing: border-box;
@@ -22,7 +28,7 @@ const GlobalStyle = () => (
       a {
         text-decoration: none;
         outline: none;
-        color: #fff;
+        color: ${lightTheme.LINE_WHITE_COLOR};
       }
     `}
   />

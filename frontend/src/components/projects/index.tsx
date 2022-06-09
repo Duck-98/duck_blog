@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container, SubContainer } from '../intro/style';
 
-const Container = styled.div`
+const Containers = styled.div`
   display: flex;
   width: 100%;
-  z-index: 1000;
 `;
 const Card = styled.div`
   display: flex;
@@ -13,6 +13,16 @@ const Card = styled.div`
 
 const Projects = () => (
   <Container>
+    <div className="intro">
+      <h1>
+        <span>always be</span>
+        <div className="message">
+          <div className="word1">steady</div>
+          <div className="word2">coding</div>
+          <div className="word3">creating</div>
+        </div>
+      </h1>
+    </div>
     <Card>
       <div className="img">이미지</div>
       <div className="content">

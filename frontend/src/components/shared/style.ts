@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333333;
+  background-color: ${(props) => props.theme.BACKGROUND_COLOR};
   padding: 8px 12px;
   @media screen and (max-width: 768px) {
     display: flex;
@@ -86,5 +86,18 @@ export const NavbarBox = styled.div<Props>`
   flex-direction: column;
   @media screen and (max-width: 768px) {
     display: ${({ open }) => (open === false ? 'none' : 'flex')};
+  }
+`;
+
+export const Foot = styled.footer`
+  background-color: ${(props) => props.theme.BACKGROUND_COLOR};
+  height: 100px;
+  position: relative;
+  transform: translateY(-100%);
+  color: white;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 67px;
   }
 `;
