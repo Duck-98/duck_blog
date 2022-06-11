@@ -15,6 +15,9 @@ export const lightTheme = {
   HDPC: `(max-width: ${responsiveView.HDPC})`,
   BACKGROUND_COLOR: '#333333',
   LINE_WHITE_COLOR: '#fff',
+  CURSOR_COLOR: '#515ce6',
+  BUTTON_COLOR: '#0077ed',
+  BUTTON_COLOR_HOVER: '#3C97F1',
 };
 
 export type ThemeType = typeof lightTheme;
