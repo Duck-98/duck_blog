@@ -1,9 +1,8 @@
 import React from 'react';
-import PostView from 'src/components/post/PostView';
 import styled from 'styled-components';
 import dynamic from 'next/dynamic';
 
-const PostWrite = dynamic(() => import('src/components/post/PostWrite'), { ssr: false });
+const PostView = dynamic(() => import('src/components/post/PostView'), { ssr: false });
 
 const Container = styled.div`
   display: flex;
@@ -12,10 +11,10 @@ const Container = styled.div`
   padding-top: 7rem;
   justify-content: center;
 `;
-const BlogWrite = (): JSX.Element => (
+const BlogView = (): JSX.Element => (
   <Container>
-    <PostWrite />
+    <PostView />
   </Container>
 );
 
-export default BlogWrite;
+export default BlogView;
