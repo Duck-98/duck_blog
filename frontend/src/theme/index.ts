@@ -18,6 +18,7 @@ export const lightTheme = {
   CURSOR_COLOR: '#515ce6',
   BUTTON_COLOR: '#0077ed',
   BUTTON_COLOR_HOVER: '#3C97F1',
+  GRAY_COLOR: '#d6d6d6',
 };
 
 export type ThemeType = typeof lightTheme;

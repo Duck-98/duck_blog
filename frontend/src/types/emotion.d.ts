@@ -12,5 +12,6 @@ declare module '@emotion/react' {
     LINE_WHITE_COLOR: string;
     CURSOR_COLOR: string;
     BUTTON_COLOR: string;
+    GRAY_COLOR: string;
   }
 }

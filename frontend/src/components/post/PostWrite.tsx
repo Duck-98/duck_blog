@@ -16,17 +16,35 @@ import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
 import tableMergedCell from '@toast-ui/editor-plugin-table-merged-cell';
 import uml from '@toast-ui/editor-plugin-uml';
 import '@toast-ui/chart/dist/toastui-chart.css';
-import React from 'react';
+import React, { useRef, useState } from 'react';
 
-const PostWrite = () => (
-  <Editor
-    plugins={[codeSyntaxHighlight, tableMergedCell, uml, chart, colorSyntax]}
-    initialValue="hello react editor world!"
-    previewStyle="vertical"
-    height="600px"
-    initialEditType="markdown"
-    useCommandShortcut
-  />
-);
+const PostWrite = () => {
+  const [markdown, setMarkdown] = useState(``);
+  const inputRef = useRef<any>();
+  const handleAddText = (e) => {
+    e.preventDefault();
+    const editorInstance = inputRef.current.getInstance();
+    const getContent_md = editorInstance.getMarkdown();
+    console.log('----markdown---');
+    console.log(getContent_md);
+    setMarkdown(getContent_md);
+    const getContent_html = editorInstance.getHTML();
+    console.log('----markdown---');
+    console.log(getContent_html);
+  };
+  return (
+    <>
+      <Editor
+        plugins={[codeSyntaxHighlight, tableMergedCell, uml, chart, colorSyntax]}
+        initialValue="hello react editor world!"
+        previewStyle="vertical"
+        height="600px"
+        initialEditType="markdown"
+        ref={inputRef}
+      />
+      <button onClick={handleAddText}>글 올리기</button>
+    </>
+  );
+};
 
 export default PostWrite;
