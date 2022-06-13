@@ -43,3 +43,11 @@ export const Form = styled.form`
 export const Error = styled.span`
   color: red;
 `;
+
+export const LoginContainer = styled(Container)`
+  height: 550px;
+`;
+
+export const LoginForm = styled(Form)`
+  height: 200px;
+`;
