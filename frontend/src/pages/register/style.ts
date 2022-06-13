@@ -20,7 +20,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 300px;
+  height: 400px;
   width: 400px;
   input {
     height: 45px;
@@ -32,11 +32,14 @@ export const Form = styled.form`
     }
   }
   .submit {
-    margin: 0 auto;
-    width: 100px;
     background-color: #0070c9;
     background: linear-gradient(#42a1ec, #0070c9);
     color: ${(props) => props.theme.LINE_WHITE_COLOR};
     border: 1px solid #07c;
+    font-size: 18px;
   }
+`;
+
+export const Error = styled.span`
+  color: red;
 `;
