@@ -34,6 +34,8 @@ export const Nav = styled.nav`
     padding-left: 0;
     li {
       padding: 8px 12px;
+      color: white;
+      cursor: pointer;
       @media screen and (max-width: 768px) {
         width: 100%;
         text-align: center;
@@ -53,6 +55,7 @@ export const Nav = styled.nav`
     padding-left: 0;
     li {
       padding: 8px 12px;
+      cursor: pointer;
     }
     @media screen and (max-width: 768px) {
       display: flex;
@@ -75,9 +78,9 @@ export const Nav = styled.nav`
 export const A = styled.a`
   text-decoration: none;
   color: white;
+  cursor: pointer;
   &:hover {
-    font-weight: bold;
-    color: white;
+
   }
 `;
 

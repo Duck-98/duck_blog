@@ -13,38 +13,40 @@ const Header = () => {
       <Nav>
         <div className="navbar_logo">
           <Link href="/">
-            <GiPlasticDuck fontSize="35px" />
-            Duck's Blog
+            <A>
+              <GiPlasticDuck fontSize="35px" />
+              Duck's Blog
+            </A>
           </Link>
         </div>
         <NavbarBox open={open}>
           <ul className="navbar_menu">
-            <li>
-              <Link href="/intro">Intro</Link>
-            </li>
-            <li>
-              <Link href="/posts/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/project">Project</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
+            <Link href="/intro">
+              <li>Intro</li>
+            </Link>
+            <Link href="/posts/blog">
+              <li>Blog</li>
+            </Link>
+            <Link href="/project">
+              <li>Project</li>
+            </Link>
+            <Link href="/contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </NavbarBox>
         <NavbarBox open={open}>
           <ul className="navbar_icons">
-            <li className="git">
-              <Link href="https://github.com/Duck-98">
+            <Link href="https://github.com/Duck-98">
+              <li className="git">
                 <AiFillGithub fontSize="30px" />
-              </Link>
-            </li>
-            <li className="Insta">
-              <Link href="https://www.instagram.com/duck.__.kn/">
+              </li>
+            </Link>
+            <Link href="https://www.instagram.com/duck.__.kn/">
+              <li className="insta">
                 <AiFillInstagram fontSize="30px" />
-              </Link>
-            </li>
+              </li>
+            </Link>
           </ul>
         </NavbarBox>
         <a className="navbar_btn" onClick={() => setOpen(!open)}>
