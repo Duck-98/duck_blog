@@ -46,6 +46,12 @@ export const Error = styled.span`
 
 export const LoginContainer = styled(Container)`
   height: 550px;
+  .register {
+    padding-top: 20px;
+    color: #0070c9;
+    cursor: pointer;
+    font-size: 15px;
+  }
 `;
 
 export const LoginForm = styled(Form)`

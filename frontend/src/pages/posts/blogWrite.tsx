@@ -7,7 +7,7 @@ const PostWrite = dynamic(() => import('src/components/post/PostWrite'), { ssr: 
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-top: 7rem;
   justify-content: center;

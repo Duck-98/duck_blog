@@ -94,13 +94,21 @@ export const NavbarBox = styled.div<Props>`
 
 export const Foot = styled.footer`
   background-color: ${(props) => props.theme.BACKGROUND_COLOR};
-  height: 100px;
-  position: relative;
-  transform: translateY(-100%);
+  min-height: calc(100%-100px);
   color: white;
   .footer {
     display: flex;
-    flex-direction: column;
-    padding-top: 67px;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    .login {
+      font-size: 40px;
+      cursor: pointer;
+    }
   }
 `;

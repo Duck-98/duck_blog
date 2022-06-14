@@ -17,6 +17,7 @@ import tableMergedCell from '@toast-ui/editor-plugin-table-merged-cell';
 import uml from '@toast-ui/editor-plugin-uml';
 import '@toast-ui/chart/dist/toastui-chart.css';
 import React, { useRef, useState } from 'react';
+import { Button } from './style';
 
 const PostWrite = () => {
   const [markdown, setMarkdown] = useState(``);
@@ -42,7 +43,7 @@ const PostWrite = () => {
         initialEditType="markdown"
         ref={inputRef}
       />
-      <button onClick={handleAddText}>글 올리기</button>
+      <Button onClick={handleAddText}>글 올리기</Button>
     </>
   );
 };

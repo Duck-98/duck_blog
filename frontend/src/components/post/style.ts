@@ -81,3 +81,18 @@ export const PostContainer = styled.div`
     }
   }
 `;
+
+export const Button = styled.button`
+  width: 300px;
+  height: 50px;
+  background-color: #0070c9;
+  background: linear-gradient(#42a1ec, #0070c9);
+  color: ${(props) => props.theme.LINE_WHITE_COLOR};
+  border-radius: 8px;
+  border: 1px solid ${(props) => props.theme.GRAY_COLOR};
+  font-size: 18px;
+  font-weight; bold;
+  margin: 0 auto;
+  margin-top: 2rem;
+  cursor: pointer;
+`;
