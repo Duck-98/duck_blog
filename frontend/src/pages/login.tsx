@@ -44,9 +44,9 @@ const Register = () => {
           <Error>{errors.password?.message}</Error>
           <input className="submit" type="submit" value="로그인" />
         </LoginForm>
-          <Link href="/register">
-            <label className="register">회원가입</label>
-          </Link>
+        <Link href="/register">
+          <label className="register">회원가입</label>
+        </Link>
       </div>
     </LoginContainer>
   );
