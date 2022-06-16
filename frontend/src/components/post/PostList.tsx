@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Tag, PostContainer } from './style';
+import { PostContainer, PostCon } from './style';
 
 const PostList = () => (
-  <Container>
+  <PostCon>
     <PostContainer>
       <div className="post-img">
         <img />
@@ -20,7 +20,7 @@ const PostList = () => (
         </div>
       </div>
     </PostContainer>
-  </Container>
+  </PostCon>
 );
 
 export default PostList;

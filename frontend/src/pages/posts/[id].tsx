@@ -6,10 +6,10 @@ const PostView = dynamic(() => import('src/components/post/PostView'), { ssr: fa
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   padding-top: 7rem;
   justify-content: center;
+  width: 100%;
 `;
 const BlogView = (): JSX.Element => (
   <Container>

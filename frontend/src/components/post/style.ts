@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Tag = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 40%;
   .btn {
     border-radius: 10px;
     border: none;
@@ -95,4 +95,8 @@ export const Button = styled.button`
   margin: 0 auto;
   margin-top: 2rem;
   cursor: pointer;
+`;
+
+export const PostCon = styled(Container)`
+  flex-direction: column;
 `;

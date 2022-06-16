@@ -79,9 +79,6 @@ export const A = styled.a`
   text-decoration: none;
   color: white;
   cursor: pointer;
-  &:hover {
-
-  }
 `;
 
 export const NavbarBox = styled.div<Props>`

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container, Tag } from './style';
 
 const PostTag = () => (
@@ -11,7 +12,9 @@ const PostTag = () => (
         </ul>
       </div>
       <div className="btn-container">
-        <button className="btn">글쓰기</button>
+        <Link href="/posts/blogWrite">
+          <button className="btn">글쓰기</button>
+        </Link>
       </div>
     </Tag>
   </Container>

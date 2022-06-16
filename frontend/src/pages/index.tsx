@@ -5,7 +5,6 @@ import PostList from 'src/components/post/PostList';
 const Home = () => (
   <>
     <Intro />
-    <PostList />
   </>
 );
 
