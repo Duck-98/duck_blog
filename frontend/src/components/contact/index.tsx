@@ -6,7 +6,7 @@ const ContactComponent = () => (
   <Container>
     <Card>
       <div className="img">
-        <img />
+        <img src="img/profile.jpeg" alt="profile" />
       </div>
       <div className="content">
         <span className="title"> 나덕경</span>
