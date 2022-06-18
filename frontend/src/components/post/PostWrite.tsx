@@ -17,7 +17,7 @@ import tableMergedCell from '@toast-ui/editor-plugin-table-merged-cell';
 import uml from '@toast-ui/editor-plugin-uml';
 import '@toast-ui/chart/dist/toastui-chart.css';
 import React, { useRef, useState } from 'react';
-import { Button } from './style';
+import { Button, TitleCon } from './style';
 
 const PostWrite = () => {
   const [markdown, setMarkdown] = useState(``);
@@ -35,9 +35,14 @@ const PostWrite = () => {
   };
   return (
     <>
+      <TitleCon>
+        <span>제목</span>
+        <input className="title" placeholder="제목을 입력해주세요" />
+        <span>내용</span>
+      </TitleCon>
       <Editor
         plugins={[codeSyntaxHighlight, tableMergedCell, uml, chart, colorSyntax]}
-        initialValue="hello react editor world!"
+        placeholder="내용을 입력해주세요."
         previewStyle="vertical"
         height="600px"
         initialEditType="markdown"

@@ -46,6 +46,7 @@ export const Tag = styled.div`
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
   .post-img {
     border: 1px solid black;
     width: 500px;
@@ -95,6 +96,22 @@ export const Button = styled.button`
   margin: 0 auto;
   margin-top: 2rem;
   cursor: pointer;
+`;
+
+export const TitleCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 100%;
+  .title {
+    height: 40px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
 `;
 
 export const PostCon = styled(Container)`

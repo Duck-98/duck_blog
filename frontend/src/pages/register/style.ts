@@ -37,6 +37,7 @@ export const Form = styled.form`
     color: ${(props) => props.theme.LINE_WHITE_COLOR};
     border: 1px solid #07c;
     font-size: 18px;
+    cursor: pointer;
   }
 `;
 

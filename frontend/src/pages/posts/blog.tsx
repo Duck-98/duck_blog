@@ -6,14 +6,24 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: row;
+  justify-content: space-between;
+  .tag {
+    width: 20%;
+  }
+  .list {
+    width: 70%;
+  }
 `;
 
 const Blog = () => (
   <Container>
-    <PostTag />
-    <PostList />;
+    <div className="tag">
+      <PostTag />
+    </div>
+    <div className="list">
+      <PostList />
+    </div>
   </Container>
 );
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SubContainer = styled.div`
   display: flex;
-  padding-top: 10rem;
+  padding-top: 5rem;
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
