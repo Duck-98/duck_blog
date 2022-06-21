@@ -4,10 +4,8 @@ import { legacy_createStore as createStore } from 'redux';
 import createSagaMiddleware, { Task } from 'redux-saga';
 import { createWrapper } from 'next-redux-wrapper';
 import { composeWithDevTools } from 'redux-devtools-extension';
-/*
 import reducer from '../reducers';
 import rootSaga from '../sagas';
-*/
 
 declare module 'redux' {
   export interface Store {

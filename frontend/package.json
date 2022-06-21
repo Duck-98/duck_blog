@@ -19,6 +19,7 @@
     "@toast-ui/editor-plugin-uml": "^3.0.1",
     "@toast-ui/react-editor": "^3.1.7",
     "@types/styled-components": "^5.1.25",
+    "axios": "^0.27.2",
     "emotion-reset": "^3.0.1",
     "hamburger-react": "^2.5.0",
     "immer": "^9.0.15",
