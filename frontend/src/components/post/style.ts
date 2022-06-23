@@ -104,7 +104,10 @@ export const TitleCon = styled.div`
   margin-bottom: 40px;
   width: 100%;
   .title {
-    height: 40px;
+    height: 80px;
+    font-size: 40px;
+    border: none;
+    border-bottom: 1px solid black;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
   }

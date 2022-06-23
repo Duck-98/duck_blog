@@ -13,7 +13,7 @@ declare module 'redux' {
   }
 }
 
-const configureStore = (context) => {
+const configureStore = (context: any) => {
   console.log(context);
   const sagaMiddleware = createSagaMiddleware();
   const middlewares = [sagaMiddleware];

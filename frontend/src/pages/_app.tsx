@@ -8,6 +8,7 @@ import Head from 'next/head';
 import Header from 'src/components/shared/Header';
 import Footer from 'src/components/shared/Footer';
 import Layout from 'src/components/shared/Layout';
+import wrapper from 'src/store/configure';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -28,4 +29,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

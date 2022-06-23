@@ -10,7 +10,7 @@ import {
   SIGN_UP_REQUEST,
   LOG_OUT_FAILURE,
   LOG_OUT_SUCCESS,
-} from 'reducers/user';
+} from 'src/reducers/user';
 
 function logInAPI(data) {
   return axios.post('/user/login', data);
@@ -21,7 +21,7 @@ function* logIn(action) {
     // const result = yield call(logInAPI, action.data);
     yield put({
       type: LOG_IN_SUCCESS,
-      data: result.data,
+      // data: result.data,
     });
   } catch (err) {
     console.error(err);
@@ -32,21 +32,22 @@ function* logIn(action) {
   }
 }
 
-function logOutAPI(data) {
-  return axios.post('/user/logout', data);
+function logOutAPI() {
+  return axios.post('/user/logout');
 }
 
-function* logOut(action) {
+function* logOut() {
   try {
-    yield call(logOutAPI);
+    // const result = yield call(logOutAPI);
+    yield delay(1000);
     yield put({
-      type: LOG_OUT_SUCCESS,
+      type: 'LOG_OUT_SUCCESS',
+      // data: result.data,
     });
   } catch (err) {
-    console.error(err);
     yield put({
-      type: LOG_OUT_FAILURE,
-      error: err.response.data,
+      type: 'LOG_OUT_FAILURE',
+      data: err.response.data,
     });
   }
 }
